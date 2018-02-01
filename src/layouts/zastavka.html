@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% block content %}
+
+<p style="float: left; padding-right: 3em;"><a href="{{ page.details.picture_url }}"><img src="{{ site.url }}/assets/img/{{ page.details.picture }}" /></a><br />
+<small>{{ page.details.picture_cc }}</a></small>
+</p>
+
+<table>
+<thead>
+<tr><th colspan="2">Základní údaje</th></tr>
+</thead>
+<tbody>
+<tr><th>Na znamení</th><td>{% if page.details.request %}ano{% else %}ne{% endif %}</td></tr>
+<tr><th>Počet kolejí</th><td>{{ page.details.tracks }}</td></tr>
+<tr><th>Nadmořská výška</th><td>{{ page.details.altitude }} m n. m.</td></tr>
+</tbody>
+</table>
+
+<div style="clear: both"></div>
+
+{{ page.content }}
+
+{% endblock %}

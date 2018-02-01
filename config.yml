@@ -1,0 +1,9 @@
+title: "Pražský Semmering"
+url: ''
+parsedown_actived: true
+author:
+    name: "Vojtěch Horký"
+collections:
+    zastavky:
+      output: true
+      layout: zastavka

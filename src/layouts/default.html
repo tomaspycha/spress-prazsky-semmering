@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="{{ site.author.name }}">
+		<meta name="robots" content="index, follow">
+		<link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+		<link rel="stylesheet" href="{{ site.url }}/assets/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1><a href="{{ site.url }}/">{{ site.title }}</a></h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="{{ site.url }}/zastavky/">Zastávky</a></li>
+					<li><a href="{{ site.url }}/jizdni-rad">Jízdní řád</a></li>
+					<li><a href="{{ site.url }}/fotogalerie">Fotogalerie</a></li>
+				</ul>
+			</nav>
+			<article>
+				<div class="main">
+
+					<h1 class="top">{{ page.title }}</h1>
+					
+					{% block content %}
+                		{{ page.content }}
+            		{% endblock %}
+				</div>
+			</article>
+			<footer>
+				<address>
+				    &copy; {{ site.author.name }}, <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Uveďte autora-Zachovejte licenci 4.0 International</a>,
+				    <a href="{{ site.url }}/about">o webu</a>.
+				</address>
+			</footer>
+		</div>
+	</body>
+</html>

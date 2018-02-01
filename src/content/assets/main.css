@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #eee;
+    font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5em 0 0.5em -1em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h1.top {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 175%;
+}
+
+h3 {
+    font-size: 140%;
+}
+
+h4 {
+    font-size: 120%;
+}
+
+p {
+    margin: 0 0 0.5em 0;
+    line-height: 1.5;
+}
+
+a:link {
+    color: #A68C1B;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4B1870;
+    text-decoration: none;
+}
+
+a:focus {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+BLOCKQUOTE {
+    font-style: italic;
+}
+
+BLOCKQUOTE .cite {
+    font-style: normal;
+}
+
+TABLE {
+    border: 2px solid;
+    border-collapse: collapse;
+    border-width: 2px 0;
+}
+
+TD, TH {
+    padding: 0.5ex;
+}
+
+THEAD {
+    border-bottom: 1px solid;
+}
+
+THEAD TH {
+    text-align: center;
+}
+
+TBODY TH {
+    text-align: left;
+}
+
+.photo {
+    margin: 1em 0 0 0em;
+}
+
+.photo .author {
+    font-style: italic;
+}
+
+.container {
+    max-width: 50em;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+header {
+    color: #fff;
+    background: black;
+    background-image: url("tracks.jpeg");
+    background-repeat: repeat;
+    padding: 1em 1.25em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a:link, header a:visited, header a:hover, header a:active {
+    color: white;
+    text-decoration: none;
+}
+
+nav, footer {
+    background: #A68C1B;
+    padding: 0;
+    color: white;
+}
+
+article {
+    padding: 1em 1em 1em 2em;
+}
+
+nav UL {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 1em;
+}
+
+nav li a {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:focus {
+    color: black;
+    background-color: white;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #4B1870;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: white;
+    background-color: red;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+@media ( min-width : 42em) {
+    header {
+        padding: 1.5em 3em;
+    }
+    nav {
+        padding: 1em 3em;
+    }
+    article {
+        padding: 2em 3em;
+    }
+    footer {
+        padding: 2em 3em;
+    }
+    nav li {
+        display: inline;
+        margin: 0 1em 0 0;
+    }
+    nav li a {
+        display: inline;
+        padding: 1em;
+        border-bottom: 0;
+    }
+}
