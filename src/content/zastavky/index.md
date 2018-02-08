@@ -11,7 +11,7 @@ max_page: 999
 <ul>
 {% for Z in page.pagination.items %}
 	<li>
-	   <a href="{{ Z.url }}">{{ Z.title }}</a>
+	   <a href="{{ site.url }}{{ Z.url }}">{{ Z.title }}</a>
 	   {% if Z.details.request %}
 	     <small>(na znamení)</small>
 	   {% endif %}
