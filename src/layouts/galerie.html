@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% block content %}
+{% for photo in page.galerie %}
+<div class="photo">
+    <h2>{{ photo.title }}</h2>
+    <p><img src="{{ site.url }}/assets/img/{{ photo.src }}" /></p>
+    <p class="author">&copy; {{ photo.cc }},
+        <a href="{{ photo.original }}">originál</a>
+    </p>
+</div>
+{% endfor %}
+{% endblock %}

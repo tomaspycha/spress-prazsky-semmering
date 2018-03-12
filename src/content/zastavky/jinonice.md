@@ -6,6 +6,8 @@ details:
   tracks: 4
   altitude: 290
   picture: jinonice.jpg
+  zdelka: 14.360556
+  zsirka: 50.051111
   picture_cc: 'VitVit, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>'
   picture_url: "https://commons.wikimedia.org/wiki/File:Jinonice_n%C3%A1dra%C5%BE%C3%AD_0.jpg"
 ---
